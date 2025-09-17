@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio de Frank Flores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f56f6708a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+  </head>
+  <body>
+    <!-- Nav-->
+    <nav aria-label="Principal">
+      <ul>
+        <li class="logo">
+          <a href="#inicio" aria-label="Ir al inicio">
+            <img src="./imagenes/logo.png" alt="Logo Frank Flores">
+          </a>
+        </li>
+        <li><a href="#sobremi">sobre mí</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contactar">contactar</a></li>
+      </ul>
+    </nav>
+    <!-- Fin Nav-->
+
+    <!-- Inicio -->
+    <main>
+      <section id="inicio">
+        <div class="contenedor">
+          <div id="bodyinicio">
+            <h2>Hola, soy <span class="accent">Frank Flores</span></h2>
+            <h3 class="sub">Emprendedor creativo & Diseñador web</h3>
+            <p>Creo experiencias digitales que combinan diseño, tecnología y storytelling para ayudar a las marcas a destacar y conectar con las personas.</p>
+            <div class="cta">
+              <a class="btn btn-primary" href="#portfolio">Explorar proyectos</a>
+              <a class="btn btn-outline" href="#contactar">Contactar</a>
+            </div>
+          </div>
+          <div id="imginicio">
+            <img src="./imagenes/Sobremi.png" alt="imginicio">
+          </div>
+        </div>
+      </section>
+      <!-- Fin Inicio -->
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <div class="contenedor">
+          <h2>Portfolio</h2>
+          <h3>Una mirada más allá del texto</h3>
+
+          <div class="filaportfolio">
+            <div class="card">
+              <video controls autoplay loop muted playsinline>
+                <source src="./media/video1.webm" type="video/mp4">
+              </video>
+              <h3>franESmark</h3>
+              <h4>Innovación Canaria</h4>
+              <div class="sep"></div>
+              <p>Soluciones digitales que combinan diseño, tecnología y creatividad para impulsar marcas con impacto.</p>
+              <div class="masinfo">
+                <a href="https://franesmark.es/" class="btn" target="_blank" rel="noopener">Más info</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./imagenes/3.png" alt="Eclíptic">
+              <h3>Eclíptic</h3>
+              <h4>Moda con ciencia</h4>
+              <div class="sep"></div>
+              <p>Diseños minimalistas inspirados en el universo, donde estética y conocimiento se unen en cada prenda</p>
+              <div class="masinfo">
+                <a href="https://www.ecliptic.es/" class="btn" target="_blank" rel="noopener">Más info</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./imagenes/2.png" alt="Grupo Ropasa">
+              <h3>Grupo Ropasa</h3>
+              <h4>Asesoría legal</h4>
+              <div class="sep"></div>
+              <p>Desarrollo de una web clara y funcional para un bufete de abogados, transmitiendo confianza y profesionalidad</p>
+              <div class="masinfo">
+                <a href="https://www.gruporopasa.com/" class="btn" target="_blank" rel="noopener">Más info</a>
+              </div>
+            </div>
+          </div> <!-- /.filaportfolio -->
+        </div> <!-- /.contenedor -->
+      </section>
+      <!-- FIN Portfolio -->
+
+      <!-- Sobre mí -->
+      <section id="sobremi">
+        <div class="contenedor">
+          <div id="imgsobremi">
+            <img src="./imagenes/mac.jpg" alt="Portátil sobre cama con café">
+          </div>
+          <div id="bodysobremi">
+            <h2>Sobre <span class="accent">mí</span></h2>
+            <p>Me considero un emprendedor creativo y diseñador web con la idea clara de que cada proyecto debe transmitir algo real. No se trata solo de diseñar páginas bonitas, sino de crear experiencias que conecten con las personas y hagan que una marca destaque de verdad.
+              Me gusta combinar diseño, tecnología y estrategia para dar forma a proyectos que inspiren y tengan un propósito. Creo en trabajar con detalle, pero también con autenticidad: porque un buen diseño no solo se ve, también se siente.
+              ¿Tienes un proyecto en mente? Hablemos</p>
+            <ul id="redessociales" aria-label="Redes sociales">
+              <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="https://open.spotify.com/" target="_blank" rel="noopener"><i class="fa-brands fa-spotify"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Sobre mí -->
+
+      <!-- Formulario-->
+      <section id="contactar">
+        <div class="contenedor">
+          <h2>Contacto</h2>
+          <h3>Envíame tus dudas</h3>
+          <form action="mailto:tucorreo@ejemplo.com" method="post" enctype="text/plain">
+            <div class="itemform">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" required>
+            </div>
+            <div class="itemform">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" minlength="2" maxlength="128">
+            </div>
+            <div class="itemform">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" minlength="6" maxlength="128" required>
+            </div>
+            <div class="itemform">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" rows="5" maxlength="1000" required></textarea>
+            </div>
+            <div class="itemform">
+              <input type="submit" name="boton" value="CONTACTAR">
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Fin Formulario-->
+    </main>
+
+<footer>
+  <ul>
+    <li class="logo">
+      <a href="#inicio" aria-label="Volver al inicio">
+        <img src="./imagenes/logo.png" alt="Logo Frank Flores pequeño">
+      </a>
+    </li>
+    <li>© 2025 Frank Flores · Todos los derechos reservados</li>
+    <li>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer"> <!-- Un guiño al profe ;) -->
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Válido!" style="border:0;width:88px;height:31px">
+      </a>
+    </li>
+  </ul>
+</footer>
+  </body>
+</html>
